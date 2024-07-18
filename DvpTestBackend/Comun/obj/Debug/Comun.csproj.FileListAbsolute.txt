@@ -1,0 +1,12 @@
+D:\Alejo\ProyectosNET\Hospital\Comun\bin\Debug\Comun.dll
+D:\Alejo\ProyectosNET\Hospital\Comun\bin\Debug\Comun.pdb
+D:\Alejo\ProyectosNET\Hospital\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+D:\Alejo\ProyectosNET\Hospital\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+D:\Alejo\ProyectosNET\Hospital\Comun\obj\Debug\Comun.dll
+D:\Alejo\ProyectosNET\Hospital\Comun\obj\Debug\Comun.pdb
+D:\Alejo\ProyectosNET\DvpTestBackend\Comun\bin\Debug\Comun.dll
+D:\Alejo\ProyectosNET\DvpTestBackend\Comun\bin\Debug\Comun.pdb
+D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.dll
+D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.pdb

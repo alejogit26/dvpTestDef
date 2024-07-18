@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="Identificador" />
+    </Key>
+    <Property Name="Identificador" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Nombres" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Apellidos" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NumeroDeIdentificacion" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="TipoIdentificacion" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FechaDeCreacion" Type="datetime" Nullable="false" />
+    <Property Name="IdentificacionTipo" Type="nvarchar" MaxLength="41" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="NombresCompletos" Type="nvarchar" MaxLength="201" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Identificador" />
+    </Key>
+    <Property Name="Identificador" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NombreUsuario" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Pass" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FechaDeCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Function Name="spConsultarPersonas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="DVP" />
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Personas" EntityType="Self.Personas" Schema="DVP" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="DVP" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

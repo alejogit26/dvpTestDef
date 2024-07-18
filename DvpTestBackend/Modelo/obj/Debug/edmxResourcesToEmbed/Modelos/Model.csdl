@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="Identificador" />
+    </Key>
+    <Property Name="Identificador" Type="Guid" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NumeroDeIdentificacion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TipoIdentificacion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaDeCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IdentificacionTipo" Type="String" MaxLength="41" FixedLength="false" Unicode="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="NombresCompletos" Type="String" MaxLength="201" FixedLength="false" Unicode="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Identificador" />
+    </Key>
+    <Property Name="Identificador" Type="Guid" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pass" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaDeCreacion" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="DbConexionV5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Personas" EntityType="Self.Personas" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <FunctionImport Name="spConsultarPersonas" ReturnType="Collection(Model.spConsultarPersonas_Result)" />
+  </EntityContainer>
+  <ComplexType Name="spConsultarPersonas_Result">
+    <Property Type="Guid" Name="Identificador" Nullable="false" />
+    <Property Type="String" Name="Nombres" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NumeroDeIdentificacion" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="TipoIdentificacion" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="FechaDeCreacion" Nullable="false" Precision="23" />
+    <Property Type="String" Name="IdentificacionTipo" Nullable="false" MaxLength="41" />
+    <Property Type="String" Name="NombresCompletos" Nullable="false" MaxLength="201" />
+  </ComplexType>
+</Schema>
