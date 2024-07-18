@@ -15,10 +15,10 @@ namespace Modelo.Modelos
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class DbConexionV5 : DbContext
+    public partial class DbConexionV6 : DbContext
     {
-        public DbConexionV5()
-            : base("name=DbConexionV5")
+        public DbConexionV6()
+            : base("name=DbConexionV6")
         {
         }
     

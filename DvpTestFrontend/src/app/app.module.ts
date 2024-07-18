@@ -5,14 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GlobalModule } from './modules/global/global.module';
-import { LoginComponent } from "./modules/inicio-sesion/login/login.component";
-import { RegisterComponent } from './modules/inicio-sesion/register/register.component';
+import { AuthGuard } from './guards/guard';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +18,7 @@ import { RegisterComponent } from './modules/inicio-sesion/register/register.com
     BrowserAnimationsModule,
     GlobalModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

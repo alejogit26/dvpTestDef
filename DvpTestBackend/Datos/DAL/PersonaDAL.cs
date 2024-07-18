@@ -16,7 +16,7 @@ namespace Datos.DAL
         {
             ListadoPaginadoVMR<PersonaVMR> resultado = new ListadoPaginadoVMR<PersonaVMR>();
 
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 var query = db.Personas.Select(x => new PersonaVMR
                 {
@@ -52,7 +52,7 @@ namespace Datos.DAL
         {
             PersonaVMR item = null;
 
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 item = db.Personas
                     .Where(x => x.Identificador == id)
@@ -77,7 +77,7 @@ namespace Datos.DAL
         public static Guid Crear(Personas item)
         {
 
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {                
                 db.Personas.Add(item);
                 db.SaveChanges();
@@ -87,7 +87,7 @@ namespace Datos.DAL
 
         public static void Actualizar(PersonaVMR item)
         {
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 var personaUpdate = db.Personas.Find(item.Identificador);
 
@@ -116,7 +116,7 @@ namespace Datos.DAL
             if (ids == null || ids.Count == 0)
                 throw new ArgumentException("La lista de ids no puede estar vacía.", nameof(ids));
 
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 var id = ids.First();
                 var persona = db.Personas.SingleOrDefault(x => x.Identificador == id);

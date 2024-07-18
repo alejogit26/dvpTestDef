@@ -10,3 +10,9 @@ D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyRefere
 D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
 D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.dll
 D:\Alejo\ProyectosNET\DvpTestBackend\Comun\obj\Debug\Comun.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\bin\Debug\Comun.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\bin\Debug\Comun.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.pdb

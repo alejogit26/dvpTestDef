@@ -26,3 +26,17 @@ D:\Alejo\ProyectosNET\DvpTestBackend\Rest\obj\Debug\Rest.csproj.CoreCompileInput
 D:\Alejo\ProyectosNET\DvpTestBackend\Rest\obj\Debug\Rest.csproj.Up2Date
 D:\Alejo\ProyectosNET\DvpTestBackend\Rest\obj\Debug\Rest.dll
 D:\Alejo\ProyectosNET\DvpTestBackend\Rest\obj\Debug\Rest.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\Rest.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\Rest.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\Comun.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\Modelo.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\EntityFramework.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\Comun.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\Modelo.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\Modelo.dll.config
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\bin\Debug\EntityFramework.xml
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\obj\Debug\Rest.csproj.AssemblyReference.cache
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\obj\Debug\Rest.csproj.CoreCompileInputs.cache
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\obj\Debug\Rest.csproj.Up2Date
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\obj\Debug\Rest.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Rest\obj\Debug\Rest.pdb

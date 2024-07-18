@@ -64,7 +64,7 @@ export class HttpService {
     }
 
     iniciarSesion(credentials: any): Observable<any> {
-        return this.httpCliente.post('http://localhost:51935/api/login', credentials);
-      }
+        return this.httpCliente.post('http://localhost:51935/api/usuario/iniciarsesion', credentials);
+    }
 
 }

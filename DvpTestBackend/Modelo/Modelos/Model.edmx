@@ -61,7 +61,7 @@
           <Property Name="Pass" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="FechaDeCreacion" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
-        <EntityContainer Name="DbConexionV5" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DbConexionV6" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Personas" EntityType="Self.Personas" />
           <EntitySet Name="Usuario" EntityType="Self.Usuario" />
           <FunctionImport Name="spConsultarPersonas" ReturnType="Collection(Model.spConsultarPersonas_Result)" />
@@ -82,7 +82,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DbConexionV5">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DbConexionV6">
           <EntitySetMapping Name="Personas">
             <EntityTypeMapping TypeName="Model.Personas">
               <MappingFragment StoreEntitySet="Personas">

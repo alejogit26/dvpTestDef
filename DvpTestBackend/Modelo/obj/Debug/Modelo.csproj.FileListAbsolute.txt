@@ -26,3 +26,17 @@ D:\Alejo\ProyectosNET\DvpTestBackend\Modelo\obj\Debug\Modelo.csproj.CoreCompileI
 D:\Alejo\ProyectosNET\DvpTestBackend\Modelo\obj\Debug\Modelo.csproj.Up2Date
 D:\Alejo\ProyectosNET\DvpTestBackend\Modelo\obj\Debug\Modelo.dll
 D:\Alejo\ProyectosNET\DvpTestBackend\Modelo\obj\Debug\Modelo.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\Modelo.dll.config
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\Modelo.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\Modelo.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\Comun.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\EntityFramework.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\Comun.pdb
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\EntityFramework.xml
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\obj\Debug\Modelo.csproj.Up2Date
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\obj\Debug\Modelo.dll
+D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Modelo\obj\Debug\Modelo.pdb

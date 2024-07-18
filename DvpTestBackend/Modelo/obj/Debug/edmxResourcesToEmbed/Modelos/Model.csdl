@@ -23,7 +23,7 @@
     <Property Name="Pass" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="FechaDeCreacion" Type="DateTime" Nullable="false" Precision="3" />
   </EntityType>
-  <EntityContainer Name="DbConexionV5" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DbConexionV6" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Personas" EntityType="Self.Personas" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" />
     <FunctionImport Name="spConsultarPersonas" ReturnType="Collection(Model.spConsultarPersonas_Result)" />

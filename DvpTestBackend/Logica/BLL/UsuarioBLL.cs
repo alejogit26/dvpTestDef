@@ -1,5 +1,7 @@
 ﻿using Comun.ViewModels;
 using Datos.DAL;
+using javax.crypto;
+using Logica.Services;
 using Modelo.Modelos;
 using System;
 using System.Collections.Generic;
@@ -34,6 +36,12 @@ namespace Logica.BLL
         public static void Eliminar(List<Guid> ids)
         {
             UsuarioDAL.Eliminar(ids);
+        }
+
+        public static Usuario ValidarUsuario(string usuario, string contraseña)
+        {
+            // Lógica para validar el usuario en la base de datos
+            return UsuarioDAL.ValidarUsuario(usuario, contraseña);
         }
     }
 }

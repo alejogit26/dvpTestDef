@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Modelo.Modelos
 {
-    public partial class DbConexionV5 : DbContext
+    public partial class DbConexionV6 : DbContext
     {
-        private DbConexionV5(string stringConexion)
+        private DbConexionV6(string stringConexion)
         :base(stringConexion)
         {
             this.Configuration.LazyLoadingEnabled = false;
@@ -17,9 +17,9 @@ namespace Modelo.Modelos
             this.Database.CommandTimeout = 900;
         }
 
-        public static DbConexionV5 Create()
+        public static DbConexionV6 Create()
         {
-            return new DbConexionV5("name=DbConexionV4");
+            return new DbConexionV6("name=DbConexionV6");
         }
     }
 }

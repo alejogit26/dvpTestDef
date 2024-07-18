@@ -53,7 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contexto\DbConexionV5.cs" />
+    <Compile Include="Contexto\DbConexionV6.cs" />
     <Compile Include="Metadatos\Persona.cs" />
     <Compile Include="Metadatos\Usuario.cs" />
     <Compile Include="Modelos\Model.Context.cs">

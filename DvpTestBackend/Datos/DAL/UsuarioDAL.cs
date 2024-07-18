@@ -15,7 +15,7 @@ namespace Datos.DAL
         {
             ListadoPaginadoVMR<UsuarioVMR> resultado = new ListadoPaginadoVMR<UsuarioVMR>();
 
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 var query = db.Usuario.Select(x => new UsuarioVMR
                 {
@@ -47,7 +47,7 @@ namespace Datos.DAL
         {
             UsuarioVMR item = null;
 
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 item = db.Usuario
                     .Where(x => x.Identificador == id)
@@ -67,7 +67,7 @@ namespace Datos.DAL
 
         public static Guid Crear(Usuario item)
         {
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 db.Usuario.Add(item);
                 db.SaveChanges();
@@ -77,7 +77,7 @@ namespace Datos.DAL
 
         public static void Actualizar(UsuarioVMR item)
         {
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 var usuarioUpdate = db.Usuario.Find(item.Identificador);
 
@@ -103,7 +103,7 @@ namespace Datos.DAL
             if (ids == null || ids.Count == 0)
                 throw new ArgumentException("La lista de ids no puede estar vacía.", nameof(ids));
 
-            using (var db = DbConexionV5.Create())
+            using (var db = DbConexionV6.Create())
             {
                 var id = ids.First();
                 var usuario = db.Usuario.SingleOrDefault(x => x.Identificador == id);
@@ -113,6 +113,16 @@ namespace Datos.DAL
                     db.Usuario.Remove(usuario);
                     db.SaveChanges();
                 }
+            }
+        }
+
+        public static Usuario ValidarUsuario(string usuario, string contraseña)
+        {
+            using (var context = new DbConexionV6())
+            {
+                // Buscar el usuario con las credenciales proporcionadas
+                return context.Usuario
+                    .FirstOrDefault(u => u.NombreUsuario == usuario && u.Pass == contraseña);
             }
         }
     }
