@@ -20,11 +20,11 @@ export class HttpService {
         parametros = parametros.append('pagina', pagina);
         parametros = parametros.append('textoBusqueda', textoBusqueda);
 
-        return this.httpCliente.get('http://localhost:51935/api/persona',{ params: parametros });
+        return this.httpCliente.get('http://localhost:51395/api/persona',{ params: parametros });
     }
 
     CrearPersona(personaData: any) {
-        return this.httpCliente.post('http://localhost:51935/api/persona', personaData);
+        return this.httpCliente.post('http://localhost:51395/api/persona', personaData);
     }
 
 
@@ -35,7 +35,7 @@ export class HttpService {
             }),
             body: ids
         };
-        return this.httpCliente.delete('http://localhost:51935/api/persona', option);
+        return this.httpCliente.delete('http://localhost:51395/api/persona', option);
     }
 
     // Métodos para Usuarios
@@ -46,11 +46,11 @@ export class HttpService {
         parametros = parametros.append('pagina', pagina);
         parametros = parametros.append('textoBusqueda', textoBusqueda);
 
-        return this.httpCliente.get('http://localhost:51935/api/usuario', { params: parametros });
+        return this.httpCliente.get('http://localhost:51395/api/usuario', { params: parametros });
     }
 
     CrearUsuario(usuarioData: any) {
-        return this.httpCliente.post('http://localhost:51935/api/usuario', usuarioData);
+        return this.httpCliente.post('http://localhost:51395/api/usuario', usuarioData);
     }
 
     EliminarUsuarios(ids: string[]) {
@@ -60,11 +60,11 @@ export class HttpService {
             }),
             body: ids
         };
-        return this.httpCliente.delete('http://localhost:51935/api/usuario', option);
+        return this.httpCliente.delete('http://localhost:51395/api/usuario', option);
     }
 
     iniciarSesion(credentials: any): Observable<any> {
-        return this.httpCliente.post('http://localhost:51935/api/usuario/iniciarsesion', credentials);
+        return this.httpCliente.post('http://localhost:51395/api/usuario/iniciarsesion', credentials);
     }
 
 }

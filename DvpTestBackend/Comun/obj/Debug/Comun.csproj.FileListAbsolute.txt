@@ -16,3 +16,15 @@ D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyRe
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.dll
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Comun\obj\Debug\Comun.pdb
+C:\Git\Temp\TestDev\DvpTestBackend\Comun\bin\Debug\Comun.dll
+C:\Git\Temp\TestDev\DvpTestBackend\Comun\bin\Debug\Comun.pdb
+C:\Git\Temp\TestDev\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+C:\Git\Temp\TestDev\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\Git\Temp\TestDev\DvpTestBackend\Comun\obj\Debug\Comun.dll
+C:\Git\Temp\TestDev\DvpTestBackend\Comun\obj\Debug\Comun.pdb
+C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\bin\Debug\Comun.dll
+C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\bin\Debug\Comun.pdb
+C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.dll
+C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.pdb

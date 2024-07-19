@@ -55,7 +55,7 @@ export class FormComponent implements OnInit {
       NumeroDeIdentificacion: [{ value: null, disabled: false }, [Validators.required]],
       Email: [{ value: null, disabled: false }, [Validators.required]], 
       TipoIdentificacion: [{ value: null, disabled: false }, [Validators.required]], 
-      FechaDeCreacion: [{ value: null, disabled: false }, [Validators.required]],      
+      FechaDeCreacion: [{ value: null, disabled: false }],      
     });
   }
 }

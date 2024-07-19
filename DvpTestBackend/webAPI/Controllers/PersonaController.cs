@@ -68,6 +68,7 @@ namespace webAPI.Controllers
             try
             {
                 item.Identificador = Guid.NewGuid();
+                item.FechaDeCreacion = DateTime.Now;
                 respuesta.datos = PersonaBLL.Crear(item);
             }
             catch (Exception e)

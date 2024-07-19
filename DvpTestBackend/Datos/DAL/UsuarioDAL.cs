@@ -116,13 +116,13 @@ namespace Datos.DAL
             }
         }
 
-        public static Usuario ValidarUsuario(string usuario, string contraseña)
+        public static Usuario ValidarUsuario(string usuario, string password)
         {
             using (var context = new DbConexionV6())
             {
                 // Buscar el usuario con las credenciales proporcionadas
                 return context.Usuario
-                    .FirstOrDefault(u => u.NombreUsuario == usuario && u.Pass == contraseña);
+                    .FirstOrDefault(u => u.NombreUsuario == usuario && u.Pass == password);
             }
         }
     }

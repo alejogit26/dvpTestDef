@@ -52,7 +52,7 @@ export class FormComponent implements OnInit {
     this.formGroup = this.fb.group({      
       NombreUsuario: [{ value: null, disabled: false}, [Validators.required]],
       Pass: [{ value: null, disabled: false }, [Validators.required]],
-      FechaDeCreacion: [{ value: null, disabled: false }, [Validators.required]],      
+      FechaDeCreacion: [{ value: null, disabled: false }],      
     });
   }
 }

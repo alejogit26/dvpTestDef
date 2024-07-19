@@ -38,10 +38,10 @@ namespace Logica.BLL
             UsuarioDAL.Eliminar(ids);
         }
 
-        public static Usuario ValidarUsuario(string usuario, string contraseña)
+        public static Usuario ValidarUsuario(string usuario, string password)
         {
             // Lógica para validar el usuario en la base de datos
-            return UsuarioDAL.ValidarUsuario(usuario, contraseña);
+            return UsuarioDAL.ValidarUsuario(usuario, password);
         }
     }
 }

@@ -190,7 +190,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51935</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51935/</IISUrl>
+          <IISUrl>http://localhost:51395/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

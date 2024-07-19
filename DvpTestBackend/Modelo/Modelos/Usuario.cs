@@ -17,6 +17,6 @@ namespace Modelo.Modelos
         public System.Guid Identificador { get; set; }
         public string NombreUsuario { get; set; }
         public string Pass { get; set; }
-        public System.DateTime FechaDeCreacion { get; set; }
+        public System.DateTime? FechaDeCreacion { get; set; }
     }
 }

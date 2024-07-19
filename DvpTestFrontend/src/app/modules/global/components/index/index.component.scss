@@ -1,12 +1,12 @@
 .app-panel-container {
     height: calc(100% - 64px);
-    background-color: #3F51B5;
+    background-color: #F5F5F5;
     padding-top: 50px;
 }
   
 .app-panel-container .mat-mdc-card {
     box-shadow: 0 1px 3px 0 rgba(255, 255, 255, .15), 0 4px 6px 0 rgba(255, 255, 255, .15) !important;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: #3f51b5;
     color: rgba(255, 255, 255, .8);
     text-align: center;
     cursor: pointer;

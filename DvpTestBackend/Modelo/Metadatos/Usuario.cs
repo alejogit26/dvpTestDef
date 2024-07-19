@@ -28,8 +28,7 @@ namespace Modelo.Metadatos
             [StringLength(100)]
             public string Pass { get; set; }
 
-            [Required]
-            public DateTime FechaDeCreacion { get; set; }
+            public DateTime? FechaDeCreacion { get; set; }
         }
     }
 }

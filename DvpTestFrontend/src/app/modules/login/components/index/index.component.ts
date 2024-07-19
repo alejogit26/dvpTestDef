@@ -1,77 +1,62 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import { MatTableDataSource } from '@angular/material/table';
+import { ActivatedRouteSnapshot, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { take } from 'rxjs';
 import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  styleUrls: ['./index.component.scss'],
 })
 export class IndexComponent implements OnInit {
-
-  displayedColumns: string[] = ['Identificador', 'NombreUsuario', 'Pass','acciones'];
-  dataSource = new MatTableDataSource<any>([]);
-
+  formGroup: FormGroup;
+  datos?: string;
 
   constructor(
     private httpService: HttpService,
     private toastr: ToastrService,
-    public dialog: MatDialog
-  ) {}
-
-  ngOnInit(): void {
-    //this.LeerTodosUsuarios();
-  }
-  /*//funcion para obtener el listado del backend de las personas
-  LeerTodosUsuarios() {
-    this.httpService.LeerTodosUsuarios(this.cantidadPorPagina, this.numeroDePagina, this.textoBusqueda)
-      .subscribe((respuesta: any) => {
-        this.dataSource.data = respuesta.datos.elemento;
-        this.cantidadTotal = respuesta.datos.cantidadTotal;
-      });
+    public dialog: MatDialog,
+    private fb: FormBuilder,
+    private router: Router
+  ) {
+    this.formGroup = this.fb.group({
+      NombreUsuario: ['', [Validators.required]],
+      Password: ['', [Validators.required]],
+    });
   }
 
-  cambiarPagina(event: any) {
-    this.cantidadPorPagina = event.pageSize;
-    this.numeroDePagina = event.pageIndex;
+  ngOnInit(): void {}
 
-    this.LeerTodosUsuarios();
-  }
+  async onSubmit(): Promise<void> {
+    if (this.formGroup.valid) {
+      let credenciales = {
+        NombreUsuario: this.formGroup.value.NombreUsuario,
+        Password: this.formGroup.value.Password,
+      };
 
-  eliminarUsuario(usuarioId: string) {
-    let confirmacion = confirm('Está seguro/a que desea eliminar el elemento?');
+      this.httpService
+        .iniciarSesion(credenciales)
+        .pipe(take(1))
+        .subscribe({
+          next: (response) => {
+            this.datos = response?.datos;
+            localStorage.setItem('currentUser', this.datos ?? '');
 
-    if (confirmacion) {
-      let ids = [usuarioId];
-
-      this.httpService.EliminarUsuarios(ids)
-        .subscribe((respuesta: any) => {
-          this.toastr.success('Elemento <b>eliminado</b> satisfactoriamente','Confirmación');
-          this.LeerTodosUsuarios();
+            if (this.datos) {
+              this.router.navigate(['']);
+            }
+          },
+          error: (error) => {
+            this.toastr.error(
+              'El nombre de usuario o password no son válidos',
+              'Error'
+            );
+            console.log({ error });
+          },
         });
     }
   }
-
-  crearUsuario() {
-    const dialogRef = this.dialog.open(FormComponent, {
-      disableClose: true,
-      autoFocus: true,
-      closeOnNavigation: false,
-      position: { top: '30px' },
-      width: '700px',
-      data: {
-        tipo: 'CREAR'
-      }
-  
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.LeerTodosUsuarios(); // Actualiza la lista si se creó un nuevo usuario
-      }
-    });
-  }*/
-
 }

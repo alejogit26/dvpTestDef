@@ -13,6 +13,7 @@ using System.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Diagnostics;
 
 namespace webAPI.Controllers
 {
@@ -73,6 +74,7 @@ namespace webAPI.Controllers
             try
             {
                 item.Identificador = Guid.NewGuid();
+                item.FechaDeCreacion = DateTime.Now;
                 respuesta.datos = UsuarioBLL.Crear(item);
             }
             catch (Exception e)
@@ -139,7 +141,7 @@ namespace webAPI.Controllers
             try
             {
                 // Validar las credenciales del usuario
-                var usuario = UsuarioBLL.ValidarUsuario(login.NombreUsuario, login.Contraseña);
+                var usuario = UsuarioBLL.ValidarUsuario(login.NombreUsuario, login.Password);
 
                 if (usuario != null)
                 {
