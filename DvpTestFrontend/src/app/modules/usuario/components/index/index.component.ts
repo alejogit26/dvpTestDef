@@ -31,7 +31,12 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
     this.LeerTodosUsuarios();
   }
-  //funcion para obtener el listado del backend de las personas
+
+  maskPassword(password: string): string {
+    if (!password) return '';
+    return '*'.repeat(password.length);
+  }
+
   LeerTodosUsuarios() {
     this.httpService.LeerTodosUsuarios(this.cantidadPorPagina, this.numeroDePagina, this.textoBusqueda)
       .subscribe((respuesta: any) => {
@@ -76,7 +81,7 @@ export class IndexComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        this.LeerTodosUsuarios(); // Actualiza la lista si se creó un nuevo usuario
+        this.LeerTodosUsuarios(); 
       }
     });
   }

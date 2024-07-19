@@ -139,8 +139,7 @@ namespace webAPI.Controllers
             var respuesta = new RespuestaVMR<string>();
 
             try
-            {
-                // Validar las credenciales del usuario
+            {                
                 var usuario = UsuarioBLL.ValidarUsuario(login.NombreUsuario, login.Password);
 
                 if (usuario != null)

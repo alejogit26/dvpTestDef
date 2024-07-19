@@ -15,6 +15,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
+
 
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -49,7 +51,8 @@ import { ToastrModule } from 'ngx-toastr';
     MatDialogModule,
     MatRadioModule,
     MatSlideToggleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
   ],
   exports: [
     HttpClientModule,
@@ -68,6 +71,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatDialogModule,
     MatRadioModule,
     MatSlideToggleModule,
+    MatSelectModule,
     ReactiveFormsModule
   ]
 })

@@ -18,18 +18,9 @@ namespace Datos.DAL
 
             using (var db = DbConexionV6.Create())
             {
-                var query = db.Personas.Select(x => new PersonaVMR
-                {
-                    Identificador = x.Identificador,
-                    Nombres = x.Nombres,
-                    Apellidos = x.Apellidos,
-                    NumeroDeIdentificacion = x.NumeroDeIdentificacion,
-                    Email = x.Email,
-                    TipoIdentificacion = x.TipoIdentificacion,
-                    FechaDeCreacion = x.FechaDeCreacion,
-                    IdentificacionTipo = x.IdentificacionTipo,
-                    NombresCompletos = x.NombresCompletos
-                });
+                var personas = db.Database.SqlQuery<PersonaVMR>("EXEC [DVP].[spConsultarPersonas]").ToList();
+
+                var query = personas.AsQueryable();
 
                 if (!string.IsNullOrEmpty(textoBusqueda))
                 {
@@ -82,7 +73,7 @@ namespace Datos.DAL
                 db.Personas.Add(item);
                 db.SaveChanges();
             }
-            return item.Identificador; // Retornamos el Identificador generado
+            return item.Identificador; 
         }
 
         public static void Actualizar(PersonaVMR item)

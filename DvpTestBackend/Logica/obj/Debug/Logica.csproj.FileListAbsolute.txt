@@ -69,7 +69,6 @@ D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Microsoft.IdentityMode
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Microsoft.IdentityModel.Logging.dll
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Microsoft.IdentityModel.Tokens.dll
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Modelo.dll
-D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Rest.dll
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\System.Buffers.dll
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\System.IO.Pipelines.dll
@@ -86,7 +85,6 @@ D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Datos.pdb
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Datos.dll.config
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Modelo.pdb
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Modelo.dll.config
-D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\Rest.pdb
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\IKVM.Java.pdb
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\IKVM.Java.dll.config
 D:\Alejo\ProyectosNET\DVP\DvpTestBackend\Logica\bin\Debug\IKVM.Runtime.pdb

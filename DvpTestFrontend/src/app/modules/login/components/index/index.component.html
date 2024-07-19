@@ -5,10 +5,16 @@
         <mat-form-field appearance="fill">
           <mat-label>Usuario</mat-label>
           <input matInput formControlName="NombreUsuario" name="NombreUsuario" placeholder="Ingrese el usuario">
+                <mat-error *ngIf="formGroup.controls['NombreUsuario'].invalid && formGroup.controls['NombreUsuario'].touched">
+                    El nombre de usuario es requerido
+                </mat-error>
         </mat-form-field>
         <mat-form-field appearance="fill">
           <mat-label>Pass</mat-label>
-          <input matInput formControlName="Password" name="Pass" type="pass" placeholder="Ingrese el password">
+          <input matInput formControlName="Password" name="Password" type="password" placeholder="Ingrese la contraseña">
+                <mat-error *ngIf="formGroup.controls['Password'].invalid && formGroup.controls['Password'].touched">
+                    La contraseña es requerida
+                </mat-error>
         </mat-form-field>
         <button mat-raised-button class="login-button" (click)="onSubmit()">Login</button>
       </form>

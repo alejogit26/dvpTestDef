@@ -11,7 +11,8 @@ import { HttpService } from 'src/app/services/http.service';
 })
 export class FormComponent implements OnInit {
 
-  formGroup!: FormGroup
+  formGroup!: FormGroup;
+  tipoIdentificacionOptions = ['','CE', 'TI', 'CC'];
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any, 
@@ -36,7 +37,7 @@ export class FormComponent implements OnInit {
       this.httpService.CrearPersona(personaData).subscribe(
         (response: any) => {
           this.toastr.success('Persona creada exitosamente', 'Éxito');
-          this.dialogRef.close(true); // Cierra el diálogo y pasa true para indicar éxito al componente padre
+          this.dialogRef.close(true); 
         },
         (error: any) => {
           console.error('Error al crear persona', error);
@@ -44,6 +45,7 @@ export class FormComponent implements OnInit {
         }
       );
     } else {
+      this.formGroup.markAllAsTouched();
       this.toastr.warning('Por favor complete todos los campos', 'Advertencia');
     }
   }
@@ -52,9 +54,9 @@ export class FormComponent implements OnInit {
     this.formGroup = this.fb.group({      
       Nombres: [{ value: null, disabled: false}, [Validators.required]],
       Apellidos: [{ value: null, disabled: false }, [Validators.required]],
-      NumeroDeIdentificacion: [{ value: null, disabled: false }, [Validators.required]],
-      Email: [{ value: null, disabled: false }, [Validators.required]], 
-      TipoIdentificacion: [{ value: null, disabled: false }, [Validators.required]], 
+      NumeroDeIdentificacion: [null, [Validators.required, Validators.pattern('^[0-9]*$')]],
+      Email: [null, [Validators.required, Validators.email]], 
+      TipoIdentificacion: [null, Validators.required], 
       FechaDeCreacion: [{ value: null, disabled: false }],      
     });
   }

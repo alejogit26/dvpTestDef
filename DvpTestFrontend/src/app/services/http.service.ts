@@ -38,7 +38,7 @@ export class HttpService {
         return this.httpCliente.delete('http://localhost:51395/api/persona', option);
     }
 
-    // Métodos para Usuarios
+    
     LeerTodosUsuarios(cantidad: number, pagina: number, textoBusqueda: string) {
         let parametros = new HttpParams();
 

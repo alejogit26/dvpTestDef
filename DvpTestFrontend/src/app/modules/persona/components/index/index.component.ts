@@ -31,7 +31,7 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
     this.LeerTodo();
   }
-  //funcion para obtener el listado del backend de las personas
+  
   LeerTodo() {
     this.httpService.LeerTodo(this.cantidadPorPagina, this.numeroDePagina, this.textoBusqueda)
       .subscribe((respuesta: any) => {
@@ -76,7 +76,7 @@ export class IndexComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        this.LeerTodo(); // Actualiza la lista si se creó una nueva persona
+        this.LeerTodo(); 
       }
     });
   }

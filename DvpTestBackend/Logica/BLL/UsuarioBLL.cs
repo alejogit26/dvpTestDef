@@ -39,8 +39,7 @@ namespace Logica.BLL
         }
 
         public static Usuario ValidarUsuario(string usuario, string password)
-        {
-            // Lógica para validar el usuario en la base de datos
+        {            
             return UsuarioDAL.ValidarUsuario(usuario, password);
         }
     }

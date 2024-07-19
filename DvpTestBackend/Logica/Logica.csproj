@@ -122,10 +122,6 @@
       <Project>{dc40ca35-1ec2-4a07-a287-ac934fd469e7}</Project>
       <Name>Modelo</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Rest\Rest.csproj">
-      <Project>{dbef2e0d-cb71-407a-9ad7-da929a0bb93a}</Project>
-      <Name>Rest</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
