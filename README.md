@@ -52,7 +52,7 @@ realizar por medio de una API rest.
 
 # Base de datos
 
-[Aquí](./recursos/sql/doublevpartners-pruebadev-scriptbasedatos.sql) encontrarás el script para la creación de la base de datos
+[Aquí](./recursos/sql/doublevpartners-pruebadev-scriptbasedatos.sql) encontrarás el script para la creación de la base de datos y el procedimiento almacenado
 
 # FrontEnd
 
@@ -61,3 +61,10 @@ realizar por medio de una API rest.
 # Backend
 
 [Aquí](./DvpTestBackend/README.md) encontrarás la información del proyecto backend
+
+# Recomendaciones
+
+Aunque no se menciona en los requerimientos de la prueba se debe considerar lo siguiente:
+
+- Adicionar un hash de seguridad al password para evitar vulnerabiliades.
+- Manejar roles cumpliendo con el principio del menor privilegio
