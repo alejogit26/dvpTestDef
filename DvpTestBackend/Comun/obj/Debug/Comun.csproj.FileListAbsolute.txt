@@ -28,3 +28,9 @@ C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyRe
 C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
 C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.dll
 C:\Git\Temp\Copia-TestDev\DvpTestBackend\Comun\obj\Debug\Comun.pdb
+C:\Git\Temp\Test-Devv2\DvpTestBackend\Comun\bin\Debug\Comun.dll
+C:\Git\Temp\Test-Devv2\DvpTestBackend\Comun\bin\Debug\Comun.pdb
+C:\Git\Temp\Test-Devv2\DvpTestBackend\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+C:\Git\Temp\Test-Devv2\DvpTestBackend\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\Git\Temp\Test-Devv2\DvpTestBackend\Comun\obj\Debug\Comun.dll
+C:\Git\Temp\Test-Devv2\DvpTestBackend\Comun\obj\Debug\Comun.pdb

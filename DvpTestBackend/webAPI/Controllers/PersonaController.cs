@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -39,25 +38,25 @@ namespace webAPI.Controllers
         {
             var respuesta = new RespuestaVMR<PersonaVMR>();
 
-                try
-                {
-                    respuesta.datos = PersonaBLL.leerUno(id);
-                }
-                catch (Exception e)
-                {
+            try
+            {
+                respuesta.datos = PersonaBLL.leerUno(id);
+            }
+            catch (Exception e)
+            {
 
-                    respuesta.codigo = HttpStatusCode.InternalServerError;
-                    respuesta.datos = null;
-                    respuesta.mensajes.Add(e.Message);
-                    respuesta.mensajes.Add(e.ToString());
-                }
+                respuesta.codigo = HttpStatusCode.InternalServerError;
+                respuesta.datos = null;
+                respuesta.mensajes.Add(e.Message);
+                respuesta.mensajes.Add(e.ToString());
+            }
 
             if (respuesta.datos == null && respuesta.mensajes.Count() == 0)
             {
                 respuesta.codigo = HttpStatusCode.NotFound;
                 respuesta.mensajes.Add("Elemento no encontrado.");
             }
-                return Content(respuesta.codigo, respuesta);
+            return Content(respuesta.codigo, respuesta);
 
         }
         [HttpPost]
@@ -83,7 +82,7 @@ namespace webAPI.Controllers
             return Content(respuesta.codigo, respuesta);
         }
         [HttpPut]
-        public IHttpActionResult Actualizar(Guid id,PersonaVMR item)
+        public IHttpActionResult Actualizar(Guid id, PersonaVMR item)
         {
             var respuesta = new RespuestaVMR<bool>();
 
@@ -114,7 +113,7 @@ namespace webAPI.Controllers
                 PersonaBLL.Eliminar(ids);
 
                 respuesta.datos = true;
-                respuesta.codigo = HttpStatusCode.OK; 
+                respuesta.codigo = HttpStatusCode.OK;
             }
             catch (Exception e)
             {

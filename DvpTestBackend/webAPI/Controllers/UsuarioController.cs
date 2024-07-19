@@ -1,19 +1,15 @@
 ﻿using Comun.ViewModels;
 using Logica.BLL;
+using Microsoft.IdentityModel.Tokens;
+using Modelo.Modelos;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Net;
-using System.Web;
-using System.Web.Http.Cors;
-using System.Web.Http;
-using Modelo.Modelos;
-using Logica.Services;
-using System.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Diagnostics;
+using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace webAPI.Controllers
 {
@@ -139,7 +135,7 @@ namespace webAPI.Controllers
             var respuesta = new RespuestaVMR<string>();
 
             try
-            {                
+            {
                 var usuario = UsuarioBLL.ValidarUsuario(login.NombreUsuario, login.Password);
 
                 if (usuario != null)

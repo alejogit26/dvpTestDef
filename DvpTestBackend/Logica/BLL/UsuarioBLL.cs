@@ -1,13 +1,8 @@
 ﻿using Comun.ViewModels;
 using Datos.DAL;
-using javax.crypto;
-using Logica.Services;
 using Modelo.Modelos;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logica.BLL
 {
@@ -39,7 +34,7 @@ namespace Logica.BLL
         }
 
         public static Usuario ValidarUsuario(string usuario, string password)
-        {            
+        {
             return UsuarioDAL.ValidarUsuario(usuario, password);
         }
     }

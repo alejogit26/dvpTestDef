@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Comun.ViewModels
 {
@@ -14,8 +10,8 @@ namespace Comun.ViewModels
 
         public List<string> mensajes { get; set; }
 
-        public RespuestaVMR() 
-        { 
+        public RespuestaVMR()
+        {
             codigo = HttpStatusCode.OK;
             datos = default(T);
             mensajes = new List<string>();

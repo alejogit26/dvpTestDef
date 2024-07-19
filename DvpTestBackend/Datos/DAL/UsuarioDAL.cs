@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Datos.DAL
 {
@@ -23,13 +21,13 @@ namespace Datos.DAL
                     NombreUsuario = x.NombreUsuario,
                     Pass = x.Pass,
                     FechaDeCreacion = x.FechaDeCreacion
-                    
+
                 });
 
                 if (!string.IsNullOrEmpty(textoBusqueda))
                 {
                     query = query.Where(x => x.NombreUsuario.Contains(textoBusqueda));
-                    
+
                 }
 
                 resultado.cantidadTotal = query.Count();
@@ -57,7 +55,7 @@ namespace Datos.DAL
                         NombreUsuario = x.NombreUsuario,
                         Pass = x.Pass,
                         FechaDeCreacion = x.FechaDeCreacion
-                        
+
                     })
                     .FirstOrDefault();
             }
@@ -72,7 +70,7 @@ namespace Datos.DAL
                 db.Usuario.Add(item);
                 db.SaveChanges();
             }
-            return item.Identificador; 
+            return item.Identificador;
         }
 
         public static void Actualizar(UsuarioVMR item)
@@ -86,7 +84,7 @@ namespace Datos.DAL
                     usuarioUpdate.NombreUsuario = item.NombreUsuario;
                     usuarioUpdate.Pass = item.Pass;
                     usuarioUpdate.FechaDeCreacion = item.FechaDeCreacion;
-                    
+
 
                     db.Entry(usuarioUpdate).State = EntityState.Modified;
                     db.SaveChanges();

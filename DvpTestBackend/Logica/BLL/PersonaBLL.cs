@@ -3,9 +3,6 @@ using Datos.DAL;
 using Modelo.Modelos;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logica.BLL
 {
@@ -13,7 +10,7 @@ namespace Logica.BLL
     {
         public static ListadoPaginadoVMR<PersonaVMR> LeerTodo(int cantidad, int pagina, string textoBusqueda)
         {
-            return PersonaDAL.LeerTodo(cantidad,pagina,textoBusqueda);
+            return PersonaDAL.LeerTodo(cantidad, pagina, textoBusqueda);
         }
 
         public static PersonaVMR leerUno(Guid id)
@@ -33,7 +30,7 @@ namespace Logica.BLL
 
         public static void Eliminar(List<Guid> ids)
         {
-            PersonaDAL.Eliminar(ids); 
+            PersonaDAL.Eliminar(ids);
         }
     }
 }

@@ -3,10 +3,7 @@ using Modelo.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Datos.DAL
 {
@@ -69,11 +66,11 @@ namespace Datos.DAL
         {
 
             using (var db = DbConexionV6.Create())
-            {                
+            {
                 db.Personas.Add(item);
                 db.SaveChanges();
             }
-            return item.Identificador; 
+            return item.Identificador;
         }
 
         public static void Actualizar(PersonaVMR item)
@@ -90,7 +87,7 @@ namespace Datos.DAL
                     personaUpdate.Email = item.Email;
                     personaUpdate.TipoIdentificacion = item.TipoIdentificacion;
                     personaUpdate.FechaDeCreacion = item.FechaDeCreacion;
-                     
+
 
                     db.Entry(personaUpdate).State = EntityState.Modified;
                     db.SaveChanges();

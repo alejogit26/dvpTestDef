@@ -61,3 +61,9 @@ Thumbs.db
 /DvpTestBackend/Rest/bin/Debug
 /DvpTestBackend/.vs/DvpTestApi
 /DvpTestBackend/.vs
+/DvpTestBackend/Comun/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/DvpTestBackend/Datos/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/DvpTestBackend/Logica/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/DvpTestBackend/Logica/obj/Debug/Logica.csproj.AssemblyReference.cache
+/DvpTestBackend/Modelo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/DvpTestBackend/webAPI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
